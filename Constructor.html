@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Constructor</title>
+
+<script type="text/javascript">
+
+    function getInfo(){
+
+        console.log(book2.title + book1.author + book1.genre+ book1.pages);
+        console.log(book2.title + book2.author + book2.genre   + book2.pages);
+    
+    }
+
+
+
+function Book(title,author,genre,pages) {
+
+
+this.title=title;
+
+this.author=author;
+
+this.genre=genre;
+
+this.pages=pages;
+
+this.getInfo=getInfo;
+
+//console.log(this.getInfo());
+
+}
+// Implement a constructor pattern in JavaScript for creating book objects.
+// Each book object should have the following properties: title, author, genre, and pages.
+// Create a constructor function Book that takes these parameters and constructs a new book object
+//  using the new keyword.
+ 
+// // Constructor function to create book objects
+ 
+ 
+// // Create books using the constructor function
+ const book1 = new Book('To Kill a Mockingbird', 'Harper Lee', 'Fiction', 281);
+ const book2 = new Book('The Great Gatsby', 'F. Scott Fitzgerald', 'Classic', 218);
+ 
+// // Display book information
+ book1.getInfo();
+ book2.getInfo();
+ 
+ 
+
+
+
+
+</script>
+
+</head>
+<body>
+    Constructor pattern
+</body>
+
+
+
+
+</html>

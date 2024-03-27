@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Factory pattern</title>
+
+<script type="text/javascript">
+    
+    //Implement a factory pattern in JavaScript for creating employee objects.
+// Each employee object should have the following properties: name1, age, position, and salary.
+// Create a factory function createEmployee that takes these parameters and returns a new
+// employee object.
+ 
+ 
+// // Factory function to create employee objects
+ 
+ 
+// // Create employees using the factory function
+// const employee1 = createEmployee('John Doe', 35, 'Developer', 50000);
+// const employee2 = createEmployee('Alice Smith', 28, 'Designer', 45000);
+ 
+// // Display employee information
+// console.log(employee1.getInfo()); // John Doe (35 years old) - Developer, Salary: 50000
+ 
+// console.log(employee2.getInfo());// VM51:19 Alice Smith (28 years old) - Designer, Salary: 45000
+ 
+
+
+
+    function createEmployee(name1,age,position,Salary) {
+
+        var object= new Object();
+        object.name1= name1;
+        object.age= age;
+        object.position=position;
+        object.Salary=Salary;
+        object.getInfo= function(){
+
+            console.log(employee1.name1 + ( employee1.age +  "years old" )+ employee1.position ,"Salary:" , employee1.Salary);
+            console.log(employee2.name1 + ( employee2.age +  "years old" )+ employee2.position ,"Salary:" , employee2.Salary);
+        }
+
+        
+      return object;
+
+      
+    }
+
+
+    /// Create employees using the factory function
+
+
+const employee1 =  createEmployee('John Doe', 35, 'Developer', 50000);
+const employee2 = createEmployee('Alice Smith', 28, 'Designer', 45000);
+ 
+// // Display employee information
+
+
+
+console.log(employee1.name1)
+
+employee1.getInfo();
+
+employee2.getInfo();
+
+//console.log(employee1.getInfo()); // John Doe (35 years old) - Developer, Salary: 50000
+ 
+//console.log(employee2.getInfo());// VM51:19 Alice Smith (28 years old) - Designer, Salary: 45000
+ 
+    
+
+
+
+
+</script>
+
+</head>
+<body>
+    Factory pattern
+</body>
+
+
+
+</html>
